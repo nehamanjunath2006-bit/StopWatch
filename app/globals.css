@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #060b17;
+  color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --surface: rgba(15, 23, 42, 0.88);
+  --surface-strong: rgba(15, 23, 42, 0.96);
+  --surface-soft: rgba(15, 23, 42, 0.54);
+  --accent: 45 212 191;
+  --accent-strong: #22d3ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.12), transparent 26%), radial-gradient(circle at 84% 10%, rgba(59, 130, 246, 0.1), transparent 18%), #020617;
+  color: #f8fafc;
+  background-color: #060b17;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light {
+  color-scheme: light;
+  background: radial-gradient(circle at top, rgba(251, 191, 36, 0.08), transparent 26%), radial-gradient(circle at 84% 10%, rgba(34, 197, 94, 0.05), transparent 18%), #f8fafc;
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+body.dark {
+  color-scheme: dark;
+  background: radial-gradient(circle at top, rgba(125, 211, 252, 0.08), transparent 28%), radial-gradient(circle at 74% 12%, rgba(139, 92, 246, 0.08), transparent 20%), #020617;
+  color: #f8fafc;
+  background-color: #060b17;
+}
+
+#root,
+#__next {
+  min-height: 100vh;
+}
+
+* {
+  outline: none;
+}
+
+*::selection {
+  background: rgba(56, 189, 248, 0.28);
+  color: #ffffff;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.2);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.32);
+  border-radius: 9999px;
+}
+
+/* Light mode color overrides */
+body.light {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+}
+
+body.light .bg-slate-950 { background-color: #f1f5f9; }
+body.light .bg-slate-900 { background-color: #f8fafc; }
+body.light .bg-slate-850 { background-color: #f8fafc; }
+body.light .bg-slate-800 { background-color: #e2e8f0; }
+body.light .bg-white\/5 { background-color: #e2e8f0; }
+body.light .bg-white\/10 { background-color: #cbd5e1; }
+body.light .hover\:bg-white\/10:hover { background-color: #cbd5e1; }
+body.light .bg-slate-100\/10 { background-color: #e2e8f0; }
+body.light .bg-slate-900\/75 { background-color: #f1f5f9; }
+body.light .bg-slate-900\/80 { background-color: #f1f5f9; }
+body.light .bg-slate-900\/70 { background-color: #f1f5f9; }
+body.light .bg-rose-500 { background-color: #ef4444; }
+body.light .bg-emerald-400 { background-color: #34d399; }
+body.light .bg-amber-400 { background-color: #fbbf24; }
+body.light .bg-slate-100\/10 { background-color: #e2e8f0; }
+body.light .bg-gradient-to-r { background-image: linear-gradient(to right, #0ea5e9, #22d3ee); }
+
+body.light .text-slate-900 { color: #0f172a; }
+body.light .text-slate-950 { color: #020617; }
+body.light .text-slate-100 { color: #1e293b; }
+body.light .text-slate-200 { color: #334155; }
+body.light .text-slate-300 { color: #475569; }
+body.light .text-slate-400 { color: #64748b; }
+body.light .text-white { color: #020617; }
+body.light .text-slate-150 { color: #334155; }
+
+body.light .border-white\/10 { border-color: rgba(203, 213, 225, 0.5); }
+body.light .border-white\/20 { border-color: rgba(203, 213, 225, 0.7); }
+body.light .border-dashed { border-color: rgba(203, 213, 225, 0.3); }
+body.light .ring-white\/10 { border-color: rgba(203, 213, 225, 0.5); }
+
+body.light .text-emerald-300 { color: #10b981; }
+body.light .text-cyan-300 { color: #06b6d4; }
+body.light .text-violet-300 { color: #a78bfa; }
+body.light .text-amber-300 { color: #fcd34d; }
+
+@keyframes float-up {
+  from {
+    transform: translateY(12px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: float-up 0.8s ease forwards;
+}
