@@ -1,4 +1,4 @@
-# Premium Stopwatch - deek test
+# Premium Stopwatch
 
 A modern stopwatch web app built with React, Next.js, TypeScript, Tailwind CSS, Framer Motion, and Zustand.
 
